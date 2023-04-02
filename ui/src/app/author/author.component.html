@@ -1,0 +1,22 @@
+<h2 class="h2Style">{{title}}</h2><br>
+<button type="Submit" class="btn btn-primary btn-lg" (click)="addAuthor()">Add Author</button><br><br>
+<table class="table table-hover table-info table-bordered">
+    <thead>
+        <tr class="table table-hover table-success table-bordered">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Birth Date</th>
+            <th>Nationality</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let author of authors">
+            <td>{{author.id}}</td>
+            <td>{{author.name}}</td>
+            <td>{{author.birthDate}}</td>
+            <td>{{author.nationality}}</td>
+            <td><button type="Delete" class="btn btn-outline-danger" (click)="deleteAuthor(author.id)">Delete</button> &nbsp;<button type="Update" class="btn btn-outline-warning" (click)="updateAuthor(author.id)">Update</button></td>
+        </tr>
+    </tbody>
+</table>

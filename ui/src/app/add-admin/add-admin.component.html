@@ -1,0 +1,12 @@
+<h2 class="h2Style">Add Admin</h2><br>
+
+<form [formGroup] = 'adminForm' (ngSubmit)="saveAdmin()">
+    <br><label for="fname">Name: &nbsp;</label>
+    <input type="text" id="name" name="name" formControlName="name" placeholder="Admin Name"><br><br>
+    <label for="username">Username: &nbsp;</label>
+    <input type="text" id="username" name="username" formControlName="username" placeholder="Username"><br><br>
+    <label for="password">Password: &nbsp;</label>
+    <input type="text" id="password" name="password" formControlName="password" placeholder="Password"><br><br>
+
+    <button type="Submit" class="btn btn-success btn-lg">Submit</button><br><br>
+</form>

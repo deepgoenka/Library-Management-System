@@ -1,0 +1,12 @@
+<h2 class="h2Style">Add Author</h2><br>
+
+<form [formGroup] = 'authorForm' (ngSubmit)="saveAuthor()">
+    <br><label for="name">Name: &nbsp;</label>
+    <input type="text" id="name" name="name" formControlName="name" placeholder="Author Name"><br><br>
+    <label for="birthDate">Birth Date: &nbsp;</label>
+    <input type="date" id="birthDate" name="birthDate" formControlName="birthDate" placeholder="Birth Date"><br><br>
+    <label for="nationality">Nationality: &nbsp;</label>
+    <input type="text" id="nationality" name="nationality" formControlName="nationality" placeholder="Nationality"><br><br>
+
+    <button type="Submit" class="btn btn-success btn-lg">Submit</button><br><br>
+</form>

@@ -1,0 +1,26 @@
+<h2 class="h2Style">{{title}}</h2><br>
+<button type="Submit" class="btn btn-primary btn-lg" (click)="addStudent()">Add Student</button><br><br>
+<table class="table table-hover table-info table-bordered">
+    <thead>
+        <tr class="table table-hover table-success table-bordered">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Roll Number</th>
+            <th>Birth Date</th>
+            <th>Mobile Number</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+            <td>{{student.id}}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.department}}</td>
+            <td>{{student.rollNumber}}</td>
+            <td>{{student.birthDate}}</td>
+            <td>{{student.mobileNumber}}</td>
+            <td><button type="Delete" class="btn btn-outline-danger" (click)="deleteStudent(student.id)">Delete</button> &nbsp;<button type="Update" class="btn btn-outline-warning" (click)="updateStudent(student.id)">Update</button></td>
+        </tr>
+    </tbody>
+</table>

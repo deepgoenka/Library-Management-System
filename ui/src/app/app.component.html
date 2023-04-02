@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-sm-3 pt-5 pb-5 text-center" id="header">
+        <img src="../assets/images/stcet-logo.png" class="img-fluid" width="120px" height="120px" alt="STCET logo">
+      </div>
+      <div class="col-sm-6 pt-5 pb-5 text-center" id="header">
+        <h1>Library Management System</h1>
+        <h3>St. Thomas' College of Engineering & Technology</h3>
+        <h5>Department of Information Technology</h5>
+      </div>
+      <div class="col-sm-3 pt-5 pb-5 text-center" id="header">
+        <img src="../assets/images/books-img.jpg" class="img-fluid rounded-circle" width="150px" height="275px" alt="Books Image">
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 mh-100 border" id="side-nav">
+      <div class="border-right border-warning h-100">
+        <nav class="nav flex-column text-center">
+            <a href="/">Home</a>
+            <a href="/admin">Admin</a>
+            <a href="/student">Student</a>
+            <a href="/book">Book</a>
+            <a href="/author">Author</a>
+            <a href="/publisher">Publisher</a>
+            <a href="/loan">Loan</a>
+        </nav>
+    </div>
+    </div>
+    <div id="bcImg" class="col-sm-9">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+<footer class="text-center text-white" style="background-color: #21081a;">
+  <div class="text-center p-3">
+    © 2023 Copyright: Deep Kumar Goenka
+  </div>
+</footer>

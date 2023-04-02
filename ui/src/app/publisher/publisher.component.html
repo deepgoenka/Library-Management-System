@@ -1,0 +1,24 @@
+<h2 class="h2Style">{{title}}</h2><br>
+<button type="Submit" class="btn btn-primary btn-lg" (click)="addPublisher()">Add Publisher</button><br><br>
+<table class="table table-hover table-info table-bordered">
+    <thead>
+        <tr class="table table-hover table-success table-bordered">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Phone Number</th>
+            <th>Email Id</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let publisher of publishers">
+            <td>{{publisher.id}}</td>
+            <td>{{publisher.name}}</td>
+            <td>{{publisher.address}}</td>
+            <td>{{publisher.phone}}</td>
+            <td>{{publisher.email}}</td>
+            <td><button type="Delete" class="btn btn-outline-danger" (click)="deletePublisher(publisher.id)">Delete</button> &nbsp;<button type="Update" class="btn btn-outline-warning" (click)="updatePublisher(publisher.id)">Update</button></td>
+        </tr>
+    </tbody>
+</table>

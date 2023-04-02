@@ -1,0 +1,16 @@
+<h2 class="h2Style">Add Student</h2><br>
+
+<form [formGroup] = 'studentForm' (ngSubmit)="saveStudent()">
+    <br><label for="name">Name: &nbsp;</label>
+    <input type="text" id="name" name="name" formControlName="name" placeholder="Student Name"><br><br>
+    <label for="department">Department: &nbsp;</label>
+    <input type="text" id="department" name="department" formControlName="department" placeholder="Department"><br><br>
+    <label for="rollNumber">Roll Number: &nbsp;</label>
+    <input type="number" id="rollNumber" name="rollNumber" formControlName="rollNumber" placeholder="Roll Number"><br><br>
+    <label for="birthDate">Birth Date: &nbsp;</label>
+    <input type="date" id="birthDate" name="birthDate" formControlName="birthDate"><br><br>
+    <label for="mobilenumber">Mobile Number: &nbsp;</label>
+    <input type="text" id="mobileNumber" name="mobileNumber" formControlName="mobileNumber" placeholder="Mobile Number"><br><br>
+
+    <button type="Submit" class="btn btn-success btn-lg">Submit</button><br><br>
+</form>

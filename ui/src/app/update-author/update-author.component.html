@@ -1,0 +1,14 @@
+<h2 class="h2Style">Update Author</h2><br>
+
+<form [formGroup] = 'authorForm' (ngSubmit)="upAuthor()">
+    <br><label for="id">ID: &nbsp;</label>
+    <input type="number" id="id" name="id" formControlName="id" placeholder="Author ID"><br><br>
+    <label for="name">Name: &nbsp;</label>
+    <input type="text" id="name" name="name" formControlName="name" placeholder="Author Name"><br><br>
+    <label for="birthDate">Birth Date: &nbsp;</label>
+    <input type="date" id="birthDate" name="birthDate" formControlName="birthDate"><br><br>
+    <label for="nationality">Nationality: &nbsp;</label>
+    <input type="text" id="nationality" name="nationality" formControlName="nationality" placeholder="Nationality"><br><br>
+
+    <button type="Update" class="btn btn-warning btn-lg">Update</button><br><br>
+</form>

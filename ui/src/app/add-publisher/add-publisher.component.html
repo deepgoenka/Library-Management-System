@@ -1,0 +1,14 @@
+<h2 class="h2Style">Add Publisher</h2><br>
+
+<form [formGroup] = 'publisherForm' (ngSubmit)="savePublisher()">
+    <br><label for="name">Name: &nbsp;</label>
+    <input type="text" id="name" name="name" formControlName="name" placeholder="Publisher Name"><br><br>
+    <label for="address">Address: &nbsp;</label>
+    <input type="text" id="address" name="address" formControlName="address" placeholder="Address"><br><br>
+    <label for="phone">Phone Number: &nbsp;</label>
+    <input type="text" id="phone" name="phone" formControlName="phone" placeholder="Phone Number"><br><br>
+    <label for="email">Email Id: &nbsp;</label>
+    <input type="text" id="email" name="email" formControlName="email" placeholder="Email ID"><br><br>
+
+    <button type="Submit" class="btn btn-success btn-lg">Submit</button><br><br>
+</form>

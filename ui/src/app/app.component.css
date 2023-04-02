@@ -1,0 +1,35 @@
+#header {
+    background-color: #212529;
+    color: azure;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#side-nav {
+    background-color: rgb(255, 230, 0);
+}
+
+a {
+    text-decoration: none;
+    font-size: xx-large;
+    color: blue;
+    padding: 4%;
+    margin: 2%;
+    background-color: darkorange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+a:hover {
+    color: black;
+    background-color: #e9cd79;
+}
+a:active {
+    color: aliceblue;
+    background-color: brown;
+}
+
+#bcImg {
+    background-image: url('../assets/images/background-img.jpg');
+    background-size: 100% ;  
+    background-size: cover;
+}

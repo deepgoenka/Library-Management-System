@@ -1,0 +1,26 @@
+<h2 class="h2Style">Update Book</h2><br>
+
+<form [formGroup] = 'booksForm' (ngSubmit)="upBook()">
+    <br><label for="ID">ID: &nbsp;</label>
+    <input type="number" id="id" name="id" formControlName="id" placeholder="Book ID"><br><br>
+    <label for="title">Title: &nbsp;</label>
+    <input type="text" id="title" name="title" formControlName="title" placeholder="Book Title"><br><br>
+    <label for="author">Author: &nbsp;</label>
+    <input type="text" id="author" name="author" formControlName="author" placeholder="Book Author"><br><br>
+    <label for="isbn">ISBN: &nbsp;</label>
+    <input type="text" id="isbn" name="isbn" formControlName="isbn" placeholder="ISBN"><br><br>
+    <label for="publicationDate">Publication Date: &nbsp;</label>
+    <input type="date" id="publicationDate" name="publicationDate" formControlName="publicationDate"><br><br>
+    <label for="publisher">Publisher: &nbsp;</label>
+    <input type="text" id="publisher" name="publisher" formControlName="publisher" placeholder="Publisher Name"><br><br>
+    <label for="copies">Copies: &nbsp;</label>
+    <input type="number" id="copies" name="copies" formControlName="copies" placeholder="Number of Copies"><br><br>
+    <label for="category">Category: &nbsp;</label>
+    <input type="text" id="category" name="category" formControlName="category" placeholder="Category"><br><br>
+    <label for="genre">Genre: &nbsp;</label>
+    <input type="text" id="genre" name="genre" formControlName="genre" placeholder="Genre"><br><br>
+    <label for="subgenre">Subgenre: &nbsp;</label>
+    <input type="text" id="subgenre" name="subgenre" formControlName="subgenre" placeholder="Subgenre"><br><br>
+
+    <button type="Update" class="btn btn-warning btn-lg">Update</button><br><br>
+</form> 
